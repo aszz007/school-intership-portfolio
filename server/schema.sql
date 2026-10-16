@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS content (
+  id INTEGER PRIMARY KEY CHECK (id = 1),
+  payload TEXT NOT NULL,
+  revision INTEGER NOT NULL DEFAULT 1
+);
+CREATE TABLE IF NOT EXISTS sessions (
+  token_hash TEXT PRIMARY KEY,
+  expires INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS attempts (
+  client_key TEXT PRIMARY KEY,
+  count INTEGER NOT NULL,
+  reset_at INTEGER NOT NULL
+);

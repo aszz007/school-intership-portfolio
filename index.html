@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="aszz007的个人作品集：软件工程、需求理解、大模型研究与企业实习作品。">
+  <title>aszz007 · 软件工程与研究作品集</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="wordmark" data-profile-name href="#top" aria-label="返回页面顶部">aszz007<span class="brand-dot"></span></a><nav aria-label="主导航"><a href="#projects">作品</a><a href="#about">关于</a><a class="github-nav" data-profile-github href="https://github.com/aszz007" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav></div></header>
+  <main id="top"><p class="container content-notice" id="content-notice" role="status" hidden>当前展示随站点发布的内容，暂时无法获取最新更新。</p>
+    <section class="hero container">
+      <div class="hero-copy"><p class="eyebrow"><span class="small-square"></span> 科研探索与软件实践</p><h1 id="profile-title">从需求开始，<br>把想法做成作品。</h1><p class="hero-description"><strong id="profile-name">aszz007</strong><br><span id="profile-introduction">一名软件工程学生，关注软件需求理解与大模型辅助开发，记录科研探索和课程实践。</span></p><div class="hero-actions"><a class="button button-dark" href="#projects">浏览作品 <span aria-hidden="true">↓</span></a><a class="text-link" data-profile-github href="https://github.com/aszz007" target="_blank" rel="noopener noreferrer">查看代码 <span aria-hidden="true">↗</span></a></div><div class="hero-note"><span class="tiny-dot"></span> 科研探索与课程实践，持续记录。</div></div>
+      <div class="hero-visual" aria-label="需求、实现和验证的关系示意"><div class="visual-caption"><span>AN IDEA, MADE VISIBLE.</span><span>01 / 03</span></div><div class="visual-grid"><div class="visual-node node-input"><span class="node-index">01</span><span>需求</span><small>What should it do?</small></div><div class="connection connection-a" aria-hidden="true"></div><div class="visual-node node-build"><span class="node-index">02</span><span>实现</span><small>Make it work.</small></div><div class="connection connection-b" aria-hidden="true"></div><div class="visual-node node-check"><span class="node-index">03</span><span>验证</span><small>Check what it does.</small><i aria-hidden="true">✓</i></div><div class="visual-note">REQUIREMENT<br>TO ARTIFACT</div></div><div class="visual-bottom"><span class="cross">＋</span><p>让每一步，<br>都有可以检查的结果。</p><span class="visual-stamp">BUILD<br>& VERIFY</span></div></div>
+    </section>
+    <div class="section-divider container"><span>SELECTED WORK</span><span>研究 / 开发 / 学习</span></div>
+    <section class="project-section container" id="projects" aria-labelledby="projects-heading">
+      <div class="section-heading"><div><p class="eyebrow">01 / PROJECTS</p><h2 id="projects-heading">一些正在构建的答案。</h2></div><p>从需求到说明，再到网页原型。<br>也把课堂里的小想法，做成能用的工具。</p></div>
+      <div class="project-toolbar"><div class="project-filters" role="group" aria-label="筛选项目"><button type="button" data-category="all" aria-pressed="true" class="active">全部<span id="count-all">7</span></button><button type="button" data-category="research" aria-pressed="false">科研项目<span id="count-research">2</span></button><button type="button" data-category="course" aria-pressed="false">课程作品<span id="count-course">5</span></button></div><span id="project-result" class="result-label" role="status">展示 7 个项目</span></div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+    <section class="about-section container" id="about" aria-labelledby="about-heading"><div class="about-intro"><p class="eyebrow">02 / ABOUT</p><h2 id="about-heading">保持好奇，<br>也认真检查结果。</h2><p id="profile-about">在科研与课设中，我关心需求怎样被理解、模型怎样参与开发，以及生成的结果能否被解释和验证。</p><a class="text-link" data-profile-github href="https://github.com/aszz007" target="_blank" rel="noopener noreferrer">在 GitHub 查看项目 <span aria-hidden="true">↗</span></a></div><div class="about-details"><div class="detail-line"><span>当前学习</span><strong>软件工程 · 企业实习</strong></div><div class="detail-line"><span>关注方向</span><strong id="profile-focus">软件需求 / 大模型 / AI辅助开发</strong></div><div class="skill-list" aria-label="项目涉及的技术"><span>Python</span><span>HTML / CSS / JavaScript</span><span>Git</span><span>Qwen</span><span>LoRA</span></div><p class="about-footnote">记录科研探索与课程实践，持续更新可以查看的作品。</p></div></section>
+  </main>
+  <footer class="site-footer container"><span class="wordmark" data-profile-name>aszz007<span class="brand-dot"></span></span><span>软件工程与研究作品集</span><a href="admin/">内容管理</a><a href="#top">回到顶部 ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow" id="dialog-category"></span><button class="close-dialog" type="button" id="close-dialog" aria-label="关闭项目详情">×</button></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-tags" id="dialog-tags"></div><h3>项目内容</h3><ul id="dialog-points"></ul><div class="dialog-status" id="dialog-status"></div><div id="dialog-links" class="dialog-links"></div></dialog>
+  <template id="project-card-template"><article class="project-card"><div class="project-art" aria-hidden="true"></div><div class="project-body"><div class="project-meta"><span class="project-category"></span><span class="project-state"></span></div><h3 class="project-title"></h3><p class="project-summary"></p><div class="project-tags"></div><div class="project-actions"><button type="button" class="detail-button">查看详情 <span aria-hidden="true">↗</span></button><a class="project-open" target="_blank" rel="noopener noreferrer"></a></div></div></article></template>
+</body>
+</html>
