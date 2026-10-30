@@ -18,11 +18,11 @@
   }
   const art = {
     inst:'<div class="art-inst"><div class="art-source"><span>TEXT</span><span>IMAGE</span><span>FLOWCHART</span></div><span class="art-arrow">↓</span><div class="expert-box">MULTI-EXPERT LoRA<span>Text · Image · FlowChart · General</span></div><span class="art-arrow">↓</span><div class="instruction-box"><span>Definition</span><span>Emphasis & Caution</span><span>Things to Avoid</span></div><small>项目流程示意</small></div>',
-    web:'<div class="art-web"><div class="mini-browser"><div class="mini-top"><i></i><i></i><i></i><span>REQUIREMENT TO WEB</span></div><div class="mini-body"><div class="mini-side"><span></span><span></span><span></span></div><div class="mini-page"><b>Build a clearer prototype.</b><p></p><div><i></i><i></i><i></i></div></div></div></div><div class="trace-chips"><span>需求</span><i>→</i><span>页面</span><i>→</i><span>检查</span></div><small>产物关系示意</small></div>',
-    todo:'<div class="art-todo"><span class="art-kicker">CAMPUS LIST</span><strong>课间</strong><div class="mini-task"><i>✓</i><span>把想法写下来</span></div><div class="mini-task"><i>○</i><span>从一件小事开始</span></div><small>一份轻巧的校园清单。</small></div>',
-    portfolio:'<div class="art-portfolio"><span class="art-kicker">PERSONAL PORTFOLIO</span><strong>aszz007<span>↗</span></strong><div class="portfolio-rule"></div><p>RESEARCH<br>& PRACTICE</p></div>',
-    notes:'<div class="art-planned"><span class="planned-symbol">#</span><span>PAPER NOTES</span><small>编辑 / 预览 / 留存</small></div>',
-    weather:'<div class="art-planned"><span class="planned-symbol">☀</span><span>CITY WEATHER</span><small>真实接口 / 三天预报</small></div>',
+    web:'<div class="art-web"><div class="mini-browser"><div class="mini-top"><i></i><i></i><i></i><span>需求与网页</span></div><div class="mini-body"><div class="mini-side"><span></span><span></span><span></span></div><div class="mini-page"><b>网页原型</b><p></p><div><i></i><i></i><i></i></div></div></div></div><div class="trace-chips"><span>需求</span><i>→</i><span>页面</span><i>→</i><span>检查</span></div><small>产物关系示意</small></div>',
+    todo:'<div class="art-todo"><span class="art-kicker">任务清单</span><strong>课间</strong><div class="mini-task"><i>✓</i><span>整理课程作业</span></div><div class="mini-task"><i>○</i><span>查看待完成任务</span></div><small>日期、优先级与分类</small></div>',
+    portfolio:'<div class="art-portfolio"><span class="art-kicker">个人作品集</span><strong>aszz007<span>↗</span></strong><div class="portfolio-rule"></div><p>RESEARCH<br>& PRACTICE</p></div>',
+    notes:'<div class="art-planned"><span class="planned-symbol">#</span><span>Markdown笔记</span><small>编辑 / 预览 / 留存</small></div>',
+    weather:'<div class="art-planned"><span class="planned-symbol">☀</span><span>城市天气</span><small>真实接口 / 三天预报</small></div>',
     imagegrab:'<div class="art-planned"><span class="planned-symbol">▧</span><span>ImageGrab</span><small>选择图片 / 下载PNG</small></div>'
   };
   const categoryLabel = category => category === 'research' ? '科研项目' : '课程作品';
@@ -43,7 +43,6 @@
     project.tags.forEach(tag => { const s = document.createElement('span'); s.textContent = tag; $('dialog-tags').append(s); });
     $('dialog-points').replaceChildren();
     project.points.forEach(point => { const li = document.createElement('li'); li.textContent = point; $('dialog-points').append(li); });
-    $('dialog-status').textContent = project.status;
     $('dialog-links').replaceChildren();
     if (project.sourceUrl) $('dialog-links').append(link('查看公开源码', project.sourceUrl, 'button button-dark'));
     if (project.demoUrl) $('dialog-links').append(link('打开本地作品', project.demoUrl, 'button button-dark'));
