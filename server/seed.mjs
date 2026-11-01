@@ -5,7 +5,7 @@ const projects = [
     description:'Req2Inst探索多模态软件需求的理解与表达，通过统一的文本表示和多专家生成，让任务说明更清晰。',
     tags:['Qwen3-8B','Multi-Expert LoRA','多模态需求'],
     points:['接收文本、图片及流程图形式的需求，转换为文本中间表示。','在共享Qwen3-8B骨干上，使用Text、Image、FlowChart与General四个LoRA专家。','输出Definition、Emphasis & Caution、Things to Avoid三部分任务说明。','公开仓库提供源码；运行还需要配置本地模型、权重和其他所需资源。'],
-    status:'科研项目介绍依据公开仓库。此页面提供说明与源码入口，未提供在线模型推理服务。',
+    status:'提供项目说明、源码和本地运行指南。',
     sourceUrl:'https://github.com/aszz007/Req2Inst', sourceLabel:'查看源码'
   },
   {
@@ -13,8 +13,8 @@ const projects = [
     summary:'连接需求处理、页面生成、检查与交付，让网页原型的形成过程可以被查看。',
     description:'Req2Web围绕需求到网页原型的完整流程组织工程产物，并通过Inspector查看它们之间的关系。',
     tags:['需求工程','网页原型','可追踪产物'],
-    points:['包含需求处理、检索、结构化页面契约、渲染与一致性检查。','通过Inspector查看过程产物、预览网页并导出交付包。','README提供无需模型的确定性本地演示，与模型生成路线分别说明。','公开源码不包含完整数据集、模型权重或全部历史实验结果。'],
-    status:'研究原型，提供公开源码与本地演示说明。无模型演示不能作为实际模型生成效果。',
+    points:['包含需求处理、检索、结构化页面契约、渲染与一致性检查。','通过Inspector查看过程产物、预览网页并导出交付包。','README提供无需模型的确定性本地演示，与模型生成路线分别说明。','模型运行所需资源与配置见源码说明。'],
+    status:'提供公开源码、Inspector和本地演示指南。',
     sourceUrl:'https://github.com/aszz007/Req2Web', sourceLabel:'查看源码'
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description:'一个轻量的个人任务工具，用于整理课程作业和日常事项。支持可选截止日期与优先级，不需要账号或服务器数据库。',
     tags:['JavaScript','日期与优先级','JSON备份'],
     points:['支持增删改与完成状态，编辑日期、优先级、课程或日常分类。','组合关键词、分类和完成状态筛选，支持日期及优先级排序。','按上海时区显示逾期与今日截止；JSON备份整份校验，替换前确认并支持撤销。','数据保存在当前浏览器；手机与电脑分别拥有自己的本地记录。'],
-    status:'可运行源码版已完成，秒哒平台版已发布到v6。源码与平台版分别记录，平台公开访问尚需本人确认。',
+    status:'支持任务编辑、分类、日期、排序和备份。',
     demoUrl:'../todo/', liveUrl:'https://app-f1dgvuck4jk1.miaoda.online', sourceLabel:'本地体验'
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       "后台修改个人信息，新增、编辑和移除作品并保存发布。",
       "服务端验证管理员会话，通过D1向不同浏览器提供相同内容。"
     ],
-    "status": "Cloudflare前后台已部署，Chrome登录、修改保存和公开读取同步已验证；手机硬件未新增实测。",
+    "status": "支持后台编辑个人介绍和作品，保存后更新网站内容。",
     "sourceUrl": "",
     "liveUrl": "https://school-internship-portfolio-aszz007.pages.dev/",
     "sourceLabel": "查看项目"
@@ -69,7 +69,7 @@ const projects = [
     status:'已接入Open-Meteo真实接口，当前天气为气象模型估计。源码与平台版分别保存。',
     demoUrl:'../weather/',liveUrl:'https://app-f1o8xoy9m135.miaoda.online',sourceLabel:'本地体验'
   },
-{id:'imagegrab',category:'course',title:'图提取 ImageGrab',subtitle:'商品图片的选择与PNG整理',state:'官网已发布',art:'imagegrab',summary:'Chrome扩展收集商品图片，支持去重、尺寸过滤、画廊选择与PNG下载。',description:'以Manifest V3和原生JavaScript实现的课程项目，配套GitHub Pages官网与可下载的插件安装包。',tags:['Chrome扩展','Manifest V3','PNG'],points:['从图片、懒加载属性、srcset和背景图提取候选图片。','画廊支持全选、反选、取消选择，显示图片尺寸及下载状态。','京东真实扩展单图PNG保存已验证；批量及其他平台保留待验证。'],status:'公开源码与官网可用；测试范围按实际验证记录说明。',sourceUrl:'https://github.com/aszz007/school-intership-imagegrab',liveUrl:'https://aszz007.github.io/school-intership-imagegrab/',sourceLabel:'查看源码'}
+{id:'imagegrab',category:'course',title:'图提取 ImageGrab',subtitle:'商品图片的选择与PNG整理',state:'官网已发布',art:'imagegrab',summary:'Chrome扩展收集商品图片，支持去重、尺寸过滤、画廊选择与PNG下载。',description:'以Manifest V3和原生JavaScript实现的课程项目，配套GitHub Pages官网与可下载的插件安装包。',tags:['Chrome扩展','Manifest V3','PNG'],points:['从图片、懒加载属性、srcset和背景图提取候选图片。','画廊支持全选、反选、取消选择，显示图片尺寸及下载状态。','按需选择图片，在本机转换为PNG并下载。'],status:'提供Chrome扩展、示例画廊和安装说明。',sourceUrl:'https://github.com/aszz007/school-intership-imagegrab',liveUrl:'https://aszz007.github.io/school-intership-imagegrab/',sourceLabel:'查看源码'}
 ];
 projects.forEach(p => delete p.demoUrl);
-export default {profile:{"name": "aszz007", "headline": "从需求开始，\n把想法做成作品。", "introduction": "一名软件工程学生，关注软件需求理解与大模型辅助开发，记录科研探索和课程实践。", "about": "在科研与课设中，我关心需求怎样被理解、模型怎样参与开发，以及生成的结果能否被解释和验证。", "focus": "软件需求 / 大模型 / AI辅助开发", "githubUrl": "https://github.com/aszz007"}, projects};
+export default {profile:{"name": "aszz007", "headline": "软件工程与科研作品", "introduction": "一名软件工程学生，关注软件需求理解与大模型辅助开发，记录科研探索和课程实践。", "about": "在科研与课设中，我关心需求怎样被理解、模型怎样参与开发，以及生成的结果能否被解释和验证。", "focus": "软件需求 / 大模型 / AI辅助开发", "githubUrl": "https://github.com/aszz007"}, projects};
