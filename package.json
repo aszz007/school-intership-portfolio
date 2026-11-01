@@ -1,12 +1,15 @@
 {
-  "name":"aszz007-portfolio",
-  "version":"2.0.0",
-  "private":true,
-  "type":"module",
-  "engines":{"node":">=24.12.0"},
-  "scripts":{
-    "build":"node scripts/build.mjs",
-    "dev":"node scripts/dev.mjs",
-    "test":"node --test test/*.test.mjs"
-  }
+  "name": "aszz007-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "license": "MIT"
 }

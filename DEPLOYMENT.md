@@ -17,7 +17,7 @@ Cloudflare Pages提供静态资源，Pages Functions处理登录和内容接口�
 - Chrome桌面已登录后台，修改个人简介并保存，刷新公开页后显示新内容。两个科研项目与五个课程项目正常加载。
 - 完整页面截图接口曾超时；按实际成功保存的浏览器截图核对内容，不把失败调用计为截图完成。
 
-证据在课设根目录evidence/portfolio-cms/cloudflare-deployment.json与cloud-http-verification.json。界面检查和截图另行保存；接口成功不替代未执行的手机硬件测试。
+历史部署记录及界面截图由作者本地留存，不随源码分发。
 
 ## 本人使用
 
